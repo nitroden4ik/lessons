@@ -1,49 +1,212 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
-  <meta charset="UTF-8"/>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Основные теги HTML</title>
+  
 </head>
 <body>
-<main class="content">
-  <aside class="left">
-    <p>Левый сайдбар</p>
-  </aside>
-  <aside class="right">
-    <p>Правый сайдбар</p>
-  </aside>
+  <h2 align="center"> ОСНОВНЫЕ ТЕГИ HTML</h2>
+ 
+   
+  
+  <div align="center"><table>
+    <tr bgcolor="#e5e5f9"><td colspan="3" style="text-align: center">
+      <i class="headers">1) СТРУКТУРА Web-страницы</i>
+      
+    </td></tr>
+    <tr>
+      <td class="column">
+        &lt;html>&lt;/html>
+        </td>
+      <td>Начало и конец страницы</td>
+      <td></td>
+      
+    </tr>
+    <tr>
+      <td class="column">
+        &lt;head>&lt;/head></td>
+      <td>Описание страницы, содержащее различную информацию не отображаемую в теле документа. Здесь распологается тег имени страницы и теги для посиковых машин.</td>
+      <td></td>
+      
+    </tr>
+    <tr >
+      <td class="column">&lt;title>&lt;/title></td>
+      <td>Имя страницы</td>
+      <td></td>
+      
+    </tr>
+    <tr >
+      <td class="column">&lt;body>&lt;/body></td>
+       <td>Определяет видимую часть страницы</td>
+        <td></td>    
+    </tr>
+  
+    <tr></tr>
+  
+    <tr bgcolor="#e5e5f9">
+      <td  colspan="2" style="text-align: center">
+        <i class="headers">2) АТРИБУТЫ ТЕЛА ДОКУМЕНТА</i>
+        </td>
+      <td>
+        <i class="headers">Значения атрибутов</i>
+        </td>
+    </tr>
+  
+    <tr>
+      <td class="red">&lt;body <i>background</i>="URL"></td>
+      <td>Фоновое изображение</td>
+      <td></td>
+    </tr>
+  
+    <tr>
+      <td class="red">&lt;body <i>bgcolor</i>="RRGGBB"></td>
+      <td>Цвет фона документа, используя значение цвета в виде RRGGBB - пример: FF0000 - красный цвет.</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td class="red">&lt;body <i>text</i> ="#RRGGBB"></td>
+      <td>Цвет фона документа, используя значение цвета в виде RRGGBB - пример: 000000 - черный цвет.</td>
+      <td rowspan="5">
+        red,
+        blue,
+        #FF0000 и др.
+      </td>
+    </tr>
+    <tr>
+      <td class="red">&lt;body <i>link</i> ="#RRGGBB"></td>
+      <td>Устанавливает цвет гиперссылок, используя значение цвета в виде RRGGBB - пример: 00FF00 - зеленый цвет.</td>
+      
+    </tr>
+    <tr>
+      <td class="red">&lt;body <i>vlink</i> ="#RRGGBB"></td>
+      <td>Устанавливает цвет гиперссылок на которых вы уже побывали, используя значение цвета в виде RRGGBB - пример: 333333 - серый цвет.</td>
+      
+    </tr>
+    <tr>
+      <td class="red">&lt;body <i>alink</i> ="#RRGGBB"></td>
+      <td>Устанавливает цвет гиперссылок при нажатии</td>
+      
+    </tr>
+    <tr></tr>
+  
+    <tr bgcolor="#e5e5f9">
+      <td colspan="2" style="text-align: center">
+        <i class="headers">3) ТЕГИ ДЛЯ ФОРМАТИРОВАНИЯ ТЕКСТА</i>
+        </td>
+      <td><i class="headers">Значения атрибутов</i></td></tr>
+    </tr>
+  
+    <tr>
+    <td class="red">&lt;h?>&lt;/h?></td>
+    <td>Создает заголовок (уровни от 1 до 6)</td>
+    <td></td>
+    </tr>
+   <tr>
+    <td class="red">&lt;h? <i>align</i> ="*">&lt;/h?></td>
+    <td>заголовок с выравниванием</td>
+    <td>left, right, center</td>
+    </tr>
+    <tr>
+     <td class="red">&lt;p>&lt;/p></td>
+     <td>Создает новый параграф</td>
+     <td></td>
+     </tr>
+    <tr>
+     <td class="red">&lt;p <i>align</i> ="*">&lt;/p></td>
+     <td>Выравнивает параграф относительно одной из сторон документа</td>
+     <td>left, right, center, justify</td>
+    </tr>
+     <tr>
+     <td class="red">&lt;br></td>
+     <td>Вставляет перевод строки</td>
+     <td></td>
+     </tr>
+     <td class="red">&lt;center>&lt;/center></td>
+     <td>Выравнивает по центру</td>
+     <td></td>
+     </tr>
+    </tr>
+    <td class="red">&lt;div <i>align</i> ="*"></td>
+    <td>Форматирование больших блоковтекста страницы, также используется таблица стилей</td>
+    <td>left, right, center, justify</td>
+    </tr>
+  
+    <tr></tr>
+  
+    <tr bgcolor="#e5e5f9">
+      <td colspan="2" style="text-align: center">
+        <i class="headers">4) ТЕГИ ДЛЯ ФОРМАТИРОВАНИЯ ШРИФТА</i>
+        </td>
+      <td><i class="headers">Значения атрибутов</i></td>
+    </tr>
+  
+  <tr>
+  <td class="red">&lt;b>&lt;/b></td>
+  <td><b>Жирный</b></td>
+  <td></td>
+  </tr>
+  
+  <tr>
+    <td class="red">&lt;i>&lt;/i></td>
+    <td><i>Курсив</i></td>
+    <td></td>
+    </tr>
+  
+    <tr>
+      <td class="red">&lt;u>&lt;/u></td>
+      <td><u>Подчеркнутый</u></td>
+      <td></td>
+      </tr>
+  
+      <tr>
+        <td class="red">&lt;sup>&lt;/sup></td>
+        <td>Верхний индекс - пример: а<sup>2</sup></td>
+        <td></td>
+        </tr>
+  
+      <tr>
+          <td class="red">&lt;sub>&lt;/sub></td>
+          <td>Нижний индекс - пример: а<sub>2</sub></td>
+          <td></td>
+      </tr>
+  
+      <tr>
+        <td class="red">&lt;font-<i>size</i> =?>&lt;/font></td>
+        <td>Размер шрифта в пределах от 1 до 7</td>
+        <td></td>
+    </tr>
+  </table></div>
 
-</main>
 
 
+  
 </body>
 
-
 <style>
-  .right {
-    width: 20%;
-    height: 100%;
-    background-color: #4A5073;
+  table,
+  tr,
+  td 
+   {
+    border: 1px solid #000;
+    width: 50%;
   }
 
-  .left {
-    width: 20%;
-    height: 100%;
-    background-color: #4A5073;
+  .column {
+    color:darkred;
+    font-weight: bold;
   }
 
-  .content {
-    width: calc(100% - 100px);
-    margin: 50px;
-    height: calc(100vh - 100px);
-    background-color: #DBE2EE;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-content: center;
-  }
+.red {
+  color: darkred;
+}
 
-  p {
-    text-align: center;
-    color: #fff;
-  }
+.headers {
+  color: darkorchid;
+}
+
+
 </style>
+</html>
