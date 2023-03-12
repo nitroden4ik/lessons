@@ -49,46 +49,40 @@
       </style>
    </head>
    <body>
-      <form action="#" name="simple form" autocomplete="on">
+      <form action="#" name="zoo_form" autocomplete="on">
          <h1>Форма заявки на работку в зоопарке</h1>
-         <i>Пожалуйста, заполните форму. Обязательные поля помечены</i>
-         <strong>
-         <span class="required">*</span>
-         </strong>
+         <i>Пожалуйста, заполните форму. Обязательные поля помечены </i>
+         <span>*</span>
          <p>
          <fieldset>
             <legend>Контактная информация</legend>
-            <label for="name">Имя <span class="required">*</span>
+            <label for="name">Имя <span>*</span>
             </label>
-            <input class="inputfield" type="text" id="name" required="required">
-            <br>
-            <p>
-               <label for="name">Телефон</label>
-               <input class="inputfield" type="tel" id="phone">
-               <br>
-            <p>
-               <label for="email">Email <span class="required">*</span>
-               </label>
-               <input class="inputfield" type="email" id="email" required="required">
-               <br>
+            <input class="inputfield" type="text" id="name" required>
+         <p>
+            <label for="name">Телефон</label>
+            <input class="inputfield" type="tel" id="phone">
+         <p>
+            <label for="email">Email <span>*</span>
+            </label>
+            <input class="inputfield" type="email" id="email" required>
          </fieldset>
          <p>
          <fieldset>
             <legend>Персональная информация</legend>
-            <label for="age">Возраст <span class="required">*</span>
+            <label for="age">Возраст <span>*</span>
             </label>
-            <input class="inputfield" type="number" id="age" required="required">
-            <br>
-            <p>
-               <label for="sex">Пол</label>
-               <select id="sex">
-                  <option value="male">Мужчина</option>
-                  <option value="female">Женщина</option>
+            <input class="inputfield" type="number" id="age" required>
+         <p>
+            <label for="sex">Пол</label>
+            <select id="sex">
+               <option value="male">Мужчина</option>
+               <option value="female">Женщина</option>
                </select>
-               <br>
+         <p>
             <div class="field">
-               <label for="message">Перечислите личные качества</label>
-               <textarea id="message" name="message" rows="6" cols="30"></textarea>
+            <label for="message">Перечислите личные качества</label>
+            <textarea id="message" name="message" rows="6" cols="30"></textarea>
             </div>
          </fieldset>
          <p>
@@ -98,7 +92,7 @@
                <input type="checkbox" id="zebra" name="zebra">
                <label for="zebra">Зебра</label>
                <input type="checkbox" id="cat" name="cat">
-               <label for="cat">Кошак</label>
+               <label for="cat">Кошка</label>
                <input type="checkbox" id="anaconda" name="anaconda">
                <label for="anaconda">Анаконда</label>
                <input type="checkbox" id="human" name="human">
@@ -114,8 +108,7 @@
             </div>
          </fieldset>
          <p>
-            <input id="btn" type="submit" value="Отправить информацию">
-            <br>
+               <input id="btn" type="submit" value="Отправить информацию">
       </form>
    </body>
 </html>
