@@ -1,6 +1,6 @@
 * {
-  margin: 0;
-  padding: 0;
+  margin: 0px;
+  padding: 0px;
  }
 
  body {
@@ -17,7 +17,7 @@
   padding-bottom: 32px;
 }
 
- span {
+ h1 {
   font-size: 42px;
 }
 
@@ -55,13 +55,24 @@
   max-width: 307px;
  }
 
- .article-content .card-category {
+.card-category {
   color: #2C90C9;
   text-decoration: none;
+  padding: 2px 12px 4px 12px;
 }
 
  .article-content h2{
   padding: 8px 0px 11px;
+  text-decoration: none;
+ }
+
+ .card-title {
+  text-decoration: none;
+  color: black;
+ }
+
+ .card-title:hover{
+  color: #424242;
  }
 
  .date {
@@ -71,12 +82,12 @@
 
  a:not(.all-posts-link):link {
   background-color: #E6F7FF;
-  padding: 2px 12px;
 }
 
 .all-posts-link {
   font-size: 17px;
   text-decoration: none;
+  color: #2C90C9;
 }
 
 .card-category:hover, .all-posts-link:hover {
