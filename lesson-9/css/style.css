@@ -17,6 +17,8 @@ body {
   margin: auto;
 }
 
+/* анимируем миксер */
+
 .mixer {
   position: absolute;
   z-index: 3;
@@ -33,6 +35,8 @@ body {
   top: 50px;
  }
 
+ /* анимируем ручку */
+
 .handle {
   position: relative;
   width: 50px;
@@ -43,6 +47,8 @@ body {
   animation: handle 1s infinite;
 }
 
+ /* анимируем чубрика */
+
 .human {
   position: relative;
   width: 100px;
@@ -51,14 +57,19 @@ body {
   animation: human 3s infinite;
 }
 
+/* анимируем капельки */
+
 .drop {
   position: relative;
   width: 10px;
   height: 10px;
   left: -10px;
+  z-index: -2;
   animation: drop .1s infinite;
   animation-delay: 2s;
 }
+
+/* анимируем водичку */
 
 .water {
   position: relative;
@@ -69,11 +80,11 @@ body {
   left: -25px;
   z-index: -1;
   overflow: hidden;
-  height: 0;
   animation: water 2s infinite;
   animation-delay: 2s;
-  
 }
+
+/* меняем масштаб миксера*/
 
 @keyframes mixer {
   0%{transform: scale(1);}
@@ -81,24 +92,32 @@ body {
   100%{transform: scale(1);}
 }
 
+/* анимация появления, поворота и падения чубрика */
+
 @keyframes human {
   0%{top: -200px; left: -20px; opacity: 0; }
   70%{top: -200px; left: -20px; }
-  100%{top: 0;  left: -20px;transform: rotate(20deg);}
+  100%{top: 0;  left: -20px; transform: rotate(20deg);}
 }
+
+/* поворот ручки */
 
 @keyframes handle {
   0%{rotate: 0deg;}
   100%{rotate: 45deg;}
 }
 
+/* падение капли */
+
 @keyframes drop {
   0%{right:70px; top: 0;}
   100%{right:70px; top: 90px;}
 }
 
+/* меняем высоту воды в стакане */
+
 @keyframes water {
-  0%{height: 0px;}
-  100%{height: 30px; transform: translateY(-20px);}
+  0%{height: 0px; opacity: 0;}
+  100%{height: 30px; transform: translateY(-20px); opacity: 1;}
 }
 
