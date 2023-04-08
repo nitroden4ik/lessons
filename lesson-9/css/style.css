@@ -1,75 +1,78 @@
-
-
-body {
-  
-  background-color: #fffaf0;
+body {  
+  background: rgb(2,0,36);
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(173,173,213,1) 0%, rgba(0,212,255,1) 100%);
   height: 100%;
   width: 100%;
   padding: 0;
   margin: 0;
 }
 
-img {
-  width: 200px;
-  height: 200px;
-}
-
-.preloader {
-  padding-top: 200px;
-  
+.preloader {  
+  padding-top: 300px;
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
   width: 100%;
+  margin: auto;
 }
 
 .mixer {
-  fill: red;
-  position: relative;
-  left: 200px;
-  z-index: 5;
+  position: absolute;
+  z-index: 3;
+  height: 200px;
+  width: 200px;
   animation: mixer .1s infinite;
 }
 
 .cup {
   position: relative;
-  top: 50px;
-  left: 170px;
-  width: 100px;
   height: 100px;
-}
+  width: 100px;
+  left: 220px;
+  top: 50px;
+ }
 
 .handle {
   position: relative;
   width: 50px;
   height: 50px;
   top: 50px;
-  left: 5px;
-  z-index: 6;
+  left: 60px;
+  z-index: 10;
   animation: handle 1s infinite;
 }
-
 
 .human {
   position: relative;
   width: 100px;
   height: 100px;
-  right: 70px;
-  animation: human 1s infinite;
+  z-index: 2;
+  animation: human 3s infinite;
 }
 
 .drop {
   position: relative;
   width: 10px;
   height: 10px;
+  left: -10px;
   animation: drop .1s infinite;
+  animation-delay: 2s;
 }
 
 .water {
   position: relative;
-  width: 100px;
+  width: 54px;
   height: 10px;
-  color: black;
+  background-color: rgb(255, 28, 20);
+  top: 100px;
+  left: -25px;
+  z-index: -1;
+  overflow: hidden;
+  height: 0;
+  animation: water 2s infinite;
+  animation-delay: 2s;
+  
 }
 
 @keyframes mixer {
@@ -79,8 +82,9 @@ img {
 }
 
 @keyframes human {
-  0%{top: -200px; }
-  100%{top: 0px; transform: rotate(20deg);}
+  0%{top: -200px; left: -20px; opacity: 0; }
+  70%{top: -200px; left: -20px; }
+  100%{top: 0;  left: -20px;transform: rotate(20deg);}
 }
 
 @keyframes handle {
@@ -91,5 +95,10 @@ img {
 @keyframes drop {
   0%{right:70px; top: 0;}
   100%{right:70px; top: 90px;}
+}
+
+@keyframes water {
+  0%{height: 0px;}
+  100%{height: 30px; transform: translateY(-20px);}
 }
 
