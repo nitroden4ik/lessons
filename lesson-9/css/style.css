@@ -1,0 +1,123 @@
+body {  
+  background: rgb(2,0,36);
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(173,173,213,1) 0%, rgba(0,212,255,1) 100%);
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.preloader {  
+  padding-top: 300px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: auto;
+}
+
+/* анимируем миксер */
+
+.mixer {
+  position: absolute;
+  z-index: 3;
+  height: 200px;
+  width: 200px;
+  animation: mixer .1s infinite;
+}
+
+.cup {
+  position: relative;
+  height: 100px;
+  width: 100px;
+  left: 220px;
+  top: 50px;
+ }
+
+ /* анимируем ручку */
+
+.handle {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  top: 50px;
+  left: 60px;
+  z-index: 10;
+  animation: handle 1s infinite;
+}
+
+ /* анимируем чубрика */
+
+.human {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  z-index: 2;
+  animation: human 3s infinite;
+}
+
+/* анимируем капельки */
+
+.drop {
+  position: relative;
+  width: 10px;
+  height: 10px;
+  left: -10px;
+  z-index: -2;
+  animation: drop .1s infinite;
+  animation-delay: 2s;
+}
+
+/* анимируем водичку */
+
+.water {
+  position: relative;
+  width: 54px;
+  height: 10px;
+  background-color: rgb(255, 28, 20);
+  top: 100px;
+  left: -25px;
+  z-index: -1;
+  overflow: hidden;
+  animation: water 2s infinite;
+  animation-delay: 2s;
+}
+
+/* меняем масштаб миксера*/
+
+@keyframes mixer {
+  0%{transform: scale(1);}
+  50%{transform: scale(1.01);}
+  100%{transform: scale(1);}
+}
+
+/* анимация появления, поворота и падения чубрика */
+
+@keyframes human {
+  0%{top: -200px; left: -20px; opacity: 0; }
+  70%{top: -200px; left: -20px; }
+  100%{top: 0;  left: -20px; transform: rotate(20deg);}
+}
+
+/* поворот ручки */
+
+@keyframes handle {
+  0%{rotate: 0deg;}
+  100%{rotate: 45deg;}
+}
+
+/* падение капли */
+
+@keyframes drop {
+  0%{right:70px; top: 0;}
+  100%{right:70px; top: 90px;}
+}
+
+/* меняем высоту воды в стакане */
+
+@keyframes water {
+  0%{height: 0px; opacity: 0;}
+  100%{height: 30px; transform: translateY(-20px); opacity: 1;}
+}
+
