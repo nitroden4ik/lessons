@@ -3,6 +3,7 @@
 <head>
   <title>CSS Grid Layout Example</title>
   <link rel="stylesheet" type="text/css" href="/css/style.css">
+  <link rel="stylesheet" href="css/slider.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
@@ -15,8 +16,9 @@
       <article class="card_wrapper">
       <img src="/img/img.png" alt="img">
       <div class="card_frame1">
-      <ul >
+      <ul>
         <li class="card_category">Мотоциклетные перчатки</li>
+
       </ul>
       <h3 class="card_name">Код красный</h3>
       <p class="card_description">Закалённое в боях,
@@ -29,9 +31,9 @@
         </div>
           <div class="card_frame3">
             <span>0.9848</span>
-            <div class="slider"></div>
-          </div>
-          
+            <div class="slider"><input type="range" min="0" max="100" step="1" value="0">
+            </div>
+          </div>          
           <a class="button" href="#">Убрать из корзины</a>
     </article>
     <article class="card_wrapper">
@@ -40,8 +42,7 @@
         <li>Мотоциклетные перчатки</li>
       </ul>
       <h3 class="card_name">Код красный</h3>
-      <p class="card_description">Закалённое в боях,
-        Пистолет...</p>
+      <p class="card_description">Закалённое в боях, Пистолет...</p>
         <h3 class="card_price">67 000 ₽</h3>
         <p class="card_recomend">Рекомендованная цена:
           100 294 ₽</p>

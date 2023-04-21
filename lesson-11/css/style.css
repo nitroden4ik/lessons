@@ -17,7 +17,7 @@ body {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: auto 1fr auto;
-  grid-gap: 10px;
+  grid-gap: 2%;
   min-height: 100vh;
 }
 
@@ -42,14 +42,14 @@ body {
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(3, auto);
   grid-gap: 10px;
-  border: 2px dashed #ffffff;
+  
   padding: 30px;
 }
 
 .card_wrapper {
   border: 2px dashed #ffffff;
   padding: 20px;
-  width: 232px;
+  width: 80%;
   background-color: #262A3E;
 }
 
@@ -81,15 +81,42 @@ body {
   height: 24px;
   background: rgba(167, 130, 233, 0.15);
   border-radius: 4px;
-  padding: 4px 8px;
+  padding: 4px 4px;
 }
 
 .card_description {
   color: #83878F;
 }
 
-.card_frame3 {
-  display: flex;
+.card_price {
+  font-size: 24px;
 }
 
+.card_recomend {
+  color: #83878F;
+}
+
+.card_frame3 {
+  display: flex;  
+  padding-top: 16px;
+  align-items: center;
+  justify-content: center;
+
+  line-height: 17px;
+  padding-bottom: 32px;
+}
+
+.slider {
+  padding-left: 10px;
+  align-items: center;
+}
+
+.button {
+  padding: 12px 32px;
+  background: #29B474;
+  border-radius: 6px;
+  width: 200px;
+  height: 44px;
+  justify-content: center;
+}
 
