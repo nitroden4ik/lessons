@@ -1,44 +1,42 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Оформить заказ</title>
     <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-	<main>	
-	<div class="left-container">
-		<form action="#" method="post">
-			<h1>Оформить заказ</h1>			
-				<label for="name">ФИО*:</label>
-					<input type="text" id="name" name="name" placeholder="Введите ваше ФИО"  required><br>
-				<label for="phone">Телефон:</label>
-					<input type="tel" id="phone" name="phone" placeholder="Введите ваш номер телефона" required><br>
-				<label for="email">Email:</label>
-					<input type="email" id="email" name="email" placeholder="Введите ваш email" required><br>
-				<label for="address">Адрес:</label>
-					<input type="text" id="address" name="address" placeholder="Введите ваш адрес" required><br>			
-				<label for="product">Примечание к заказу:</label>
-					<textarea id="product" name="notes"></textarea><br>
-		<input type="submit" id="order" value="Оформить заказ">
-		</form>
-	</div>
-	<div class="right-container">
-		<form>
-			<h1>Способ доставки</h1>
-				<input type="radio" id="btn1" name="shipment" value="blr">
-				<label for="btn1">Склад РБ</label><br>
-				<p>Это самый удобный, бесплатный и быстрый способ получения заказа!	<br>Адрес склада: г.Гродно, ул. Горького, 91<br>Отгрузка осуществляется по предварительной договоренности, телефон для связи +375 (15) 261 08 81</p>
-				<input type="radio" id="btn2" name="shipment" value="rus">
-				<label for="btn2">Склад РФ</label><br>
-				<p>Это самый удобный, бесплатный и быстрый способ получения заказа!<br> Адрес склада: г. Подольск, ул. Вишневая, д.7, склад 11<br> Отгрузка осуществляется по предварительной договоренности, телефон для связи +7 919 045 55 88</p>
-				<input type="radio" id="btn3" name="shipment" value="custom">
-				<label for="btn3">Доставка</label><br>
-				<p>Сроки доставки товара покупателю устанавливаются договором. Если доставка товара произведена в установленные договором сроки, но товар не был передан покупателю по его вине, повторная доставка производится после повторной оплаты покупателем стоимости услуг по доставке товара.</p>
-		</form>
-	</div>
-	</main>
-</body>
+  </head>
+  <body>
+    <main>
+      <div class="left-container">
+        <form action="#" method="post">
+          <h1>Оформить заказ</h1>
+          <label>ФИО*:<input type="text" name="name" placeholder="Введите ваше ФИО" required>
+          </label>
+          <label>Телефон:<input type="tel" name="phone" placeholder="Введите ваш номер телефона" required>
+          </label>
+          <label>Email:<input type="email" name="email" placeholder="Введите ваш email" required>
+          </label>
+          <label>Адрес:<input type="text" name="address" placeholder="Введите ваш адрес" required>
+          </label>
+          <label>Примечание к заказу:<textarea name="notes"></textarea>
+          </label>
+          <input type="submit" id="order" value="Оформить заказ">
+      </div>
+      <div class="right-container">
+        <h1>Способ доставки</h1>
+        <label>
+          <input type="radio" name="shipment" value="blr">Склад РБ</label>
+        <p>Это самый удобный, бесплатный и быстрый способ получения заказа!<br>Адрес склада: г.Гродно, ул. Горького, 91<br>Отгрузка осуществляется по предварительной договоренности, телефон для связи +375 (15) 261 08 81</p>
+        <label>
+          <input type="radio" name="shipment" value="rus">Склад РФ</label>
+        <p>Это самый удобный, бесплатный и быстрый способ получения заказа!<br>Адрес склада: г. Подольск, ул. Вишневая, д.7, склад 11<br>Отгрузка осуществляется по предварительной договоренности, телефон для связи +7 919 045 55 88</p>
+        <label>
+          <input type="radio" name="shipment" value="custom">Доставка</label>
+        <br>
+        <p>Сроки доставки товара покупателю устанавливаются договором. Если доставка товара произведена в установленные договором сроки, но товар не был передан покупателю по его вине, повторная доставка производится после повторной оплаты покупателем стоимости услуг по доставке товара.</p>
+      </div>
+      </form>
+  </body>
 </html>
