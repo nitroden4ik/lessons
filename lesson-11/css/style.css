@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -5,8 +7,6 @@
   color: white;
   list-style: none;
 }
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
-
 
 body {
   background-color: #1B222E;
@@ -15,57 +15,60 @@ body {
 
 .container {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: auto 1fr auto;
-  grid-gap: 2%;
+  grid-template-columns: repeat(6, 232px);
+  grid-template-rows: 220px auto 442px;
   min-height: 100vh;
-}
-
-.header {
-  grid-column: 1 / span 4;
-  grid-row: 1 / 2;
-  border: 2px dashed #ffffff;
-  padding: 30px;
-}
-
-.sidebar {
-  grid-column: 1 / 2;
-  grid-row: 2 / 3;
-  border: 2px dashed #ffffff;
-  padding: 30px;
+  justify-content: center;
+  align-content: center;
 }
 
 .main {
   grid-column: 2 / span 3;
   grid-row: 2 / 3;
   display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(232px, 1fr));
+  grid-template-rows: repeat(auto-fit, minmax(442px, 1fr));
+}
+
+.header {
+  grid-column: 1 / span 6;
+  grid-row: 1 / 2;
+  border: 2px  solid #fff;
+}
+
+.main {
+  grid-column: 2 / span 3;
+  grid-row: 2 / 3;
+  display: grid;
+  gap: 30px;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(3, auto);
-  grid-gap: 10px;
   
-  padding: 30px;
+}
+
+.sidebar {
+  grid-column: 1 / 1;
+  border: 2px  solid #fff;
 }
 
 .card_wrapper {
-  border: 2px dashed #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 0 auto;
   padding: 20px;
-  width: 80%;
-  background-color: #262A3E;
+  width: auto;
+  height: auto;
+  background: rgba(167, 130, 233, 0.03);
+  border: 1px solid #262A3E;
+  border-radius: 6px;
 }
 
 .footer {
-  grid-column: 1 / span 4;
-  grid-row: 3 / 4;
-  border: 2px dashed #ffffff;
+  grid-column: 1 / span 6;
+  border: 2px  solid #fff;
   padding: 30px;
-}
-
-.card_frame1 {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  padding: 0px;
-  gap: 1px;
 }
 
 .card_frame2 {
@@ -75,17 +78,19 @@ body {
 .card_category {
   font-weight: 400;
   font-size: 11px;
-  line-height: 16px;
-  color: #A782E9;
   width: 157px;
-  height: 24px;
+  line-height: 16px;
+  text-align: center;
+  color: #A782E9;
   background: rgba(167, 130, 233, 0.15);
   border-radius: 4px;
   padding: 4px 4px;
+  margin-top: -20px;
 }
 
 .card_description {
   color: #83878F;
+  font-size: 13px;
 }
 
 .card_price {
@@ -94,29 +99,44 @@ body {
 
 .card_recomend {
   color: #83878F;
+  width: 80%;
+  font-size: 13px;
 }
 
 .card_frame3 {
-  display: flex;  
+  display: flex;
   padding-top: 16px;
   align-items: center;
-  justify-content: center;
-
+  justify-content: flex-start;
   line-height: 17px;
   padding-bottom: 32px;
 }
 
 .slider {
   padding-left: 10px;
-  align-items: center;
+  padding-bottom: 7px;
 }
 
 .button {
   padding: 12px 32px;
   background: #29B474;
   border-radius: 6px;
-  width: 200px;
-  height: 44px;
-  justify-content: center;
+  transition: .4s;
 }
 
+.button:hover {
+  transform: scale(1.1);
+}
+
+.card_category_btn {
+  padding: 4px 8px;
+  color: #A782E9;
+}
+
+.card_category_btn:hover {
+  color: white;
+}
+
+.card_name a:hover {
+  color: #A782E9;
+}
