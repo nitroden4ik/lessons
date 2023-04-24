@@ -11,63 +11,65 @@
 body {
   background-color: #1B222E;
   font-family: 'Open Sans', sans-serif;
+  font-display: swap;
 }
 
 .container {
+  max-width: 1440px;
+  margin: 0 auto;
   display: grid;
-  grid-template-columns: repeat(6, 232px);
-  grid-template-rows: 220px auto 442px;
+  grid-template-columns: 220px 1fr;
   min-height: 100vh;
   justify-content: center;
   align-content: center;
 }
 
-.main {
-  grid-column: 2 / span 3;
-  grid-row: 2 / 3;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(232px, 1fr));
-  grid-template-rows: repeat(auto-fit, minmax(442px, 1fr));
-}
-
 .header {
-  grid-column: 1 / span 6;
-  grid-row: 1 / 2;
-  border: 2px  solid #fff;
+  height: 360px;
+  grid-column: 1 / span 2;
+  border: 2px solid #fff;
 }
 
 .main {
-  grid-column: 2 / span 3;
-  grid-row: 2 / 3;
+  position: relative;
   display: grid;
-  gap: 30px;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(3, auto);
-  
+  grid-template-rows: auto;
 }
 
 .sidebar {
   grid-column: 1 / 1;
-  border: 2px  solid #fff;
+  border: 2px solid #fff;
 }
 
 .card_wrapper {
+  position: relative;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-  margin: 0 auto;
+  grid-column: span 1;
+  grid-row: span 1;
+  z-index: 5;
+  width: 232px;
+  height: 417px;
+  justify-content: end;
+  margin: 20px;
   padding: 20px;
-  width: auto;
-  height: auto;
   background: rgba(167, 130, 233, 0.03);
   border: 1px solid #262A3E;
   border-radius: 6px;
 }
 
+.img {
+  position: absolute;
+  z-index: 4;
+  object-fit: cover;
+  top: 0;
+}
+
 .footer {
-  grid-column: 1 / span 6;
-  border: 2px  solid #fff;
+  height: 442px;
+  grid-column: 1 / -1;
+  border: 2px solid #fff;
   padding: 30px;
 }
 
