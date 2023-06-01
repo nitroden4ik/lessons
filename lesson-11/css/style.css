@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  color: white;
+  list-style: none;
+}
+
+body {
+  background-color: #1B222E;
+  font-family: 'Open Sans', sans-serif;
+  font-display: swap;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  min-height: 100vh;
+  justify-content: center;
+  align-content: center;
+}
+
+.header {
+  height: 360px;
+  grid-column: 1 / span 2;
+  border: 2px solid #fff;
+}
+
+.main {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto;
+}
+
+.sidebar {
+  grid-column: 1 / 1;
+  border: 2px solid #fff;
+}
+
+.card_wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  grid-column: span 1;
+  grid-row: span 1;
+  z-index: 5;
+  width: 232px;
+  height: 417px;
+  justify-content: end;
+  margin: 20px;
+  padding: 20px;
+  background: rgba(167, 130, 233, 0.03);
+  border: 1px solid #262A3E;
+  border-radius: 6px;
+}
+
+.img {
+  position: absolute;
+  z-index: 4;
+  object-fit: cover;
+  top: 0;
+}
+
+.footer {
+  height: 442px;
+  grid-column: 1 / -1;
+  border: 2px solid #fff;
+  padding: 30px;
+}
+
+.card_frame2 {
+  padding-top: 16px;
+}
+
+.card_category {
+  font-weight: 400;
+  font-size: 11px;
+  width: 157px;
+  line-height: 16px;
+  text-align: center;
+  color: #A782E9;
+  background: rgba(167, 130, 233, 0.15);
+  border-radius: 4px;
+  padding: 4px 4px;
+  margin-top: -20px;
+}
+
+.card_description {
+  color: #83878F;
+  font-size: 13px;
+}
+
+.card_price {
+  font-size: 24px;
+}
+
+.card_recomend {
+  color: #83878F;
+  width: 80%;
+  font-size: 13px;
+}
+
+.card_frame3 {
+  display: flex;
+  padding-top: 16px;
+  align-items: center;
+  justify-content: flex-start;
+  line-height: 17px;
+  padding-bottom: 32px;
+}
+
+.slider {
+  padding-left: 10px;
+  padding-bottom: 7px;
+}
+
+.button {
+  padding: 12px 32px;
+  background: #29B474;
+  border-radius: 6px;
+  transition: .4s;
+}
+
+.button:hover {
+  transform: scale(1.1);
+}
+
+.card_category_btn {
+  padding: 4px 8px;
+  color: #A782E9;
+}
+
+.card_category_btn:hover {
+  color: white;
+}
+
+.card_name a:hover {
+  color: #A782E9;
+}

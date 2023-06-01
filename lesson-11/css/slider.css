@@ -1,0 +1,26 @@
+input[type="range"] {
+  -webkit-appearance: none;
+  width: 153px;
+  height: 4px;
+  background: linear-gradient(to right, #47EF71, #29B474, #FFDA44, #FF9500, #C73434);
+  outline: none;
+  border-radius: 5px;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 4px;
+  height: 16px;
+  background: #fff;
+  cursor: pointer;
+  border-radius: 1px;
+  transition: .4s;
+}
+
+input[type="range"]::-webkit-slider-thumb:hover {
+  transform: scale(2.1);
+}
+
